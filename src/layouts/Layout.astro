@@ -1,14 +1,30 @@
+---
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Code Bridge | Convert Low-Code to Python | Blue Prism to Code</title>
+		<meta name="description" content="Transform Blue Prism, UiPath & other low-code platforms to production-ready Python code. Join our waitlist for early access." />
+		<meta name="keywords" content="low-code conversion, Blue Prism to Python, UiPath converter, low-code to code, RPA conversion, PowerPlatform" />
+		
+        <meta property="og:title" content="Code Bridge | Convert Low-Code to Python | Blue Prism to Code" />
+        <meta property="og:description" content="Transform Blue Prism, UiPath & other low-code platforms to production-ready Python code. Join our waitlist for early access." />
+		<meta property="og:image" content="https://codebridge.ai/images/codebridge-social.png" />
+		
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@codebridgeai" />
+        <meta name="twitter:title" content="Code Bridge | Convert Low-Code to Python | Blue Prism to Code" />
+        <meta name="twitter:description" content="Transform Blue Prism, UiPath & other low-code platforms to production-ready Python code. Join our waitlist for early access." />
 	</head>
 	<body>
+		<Header/>
 		<slot />
+		<Footer/>
 	</body>
 </html>
 
