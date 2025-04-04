@@ -1,53 +1,124 @@
-<section id="benefits" class="benefits">
+<section id="benefits" class="benefits-section">
     <div class="container">
         <h2>Why Choose CodeBridge?</h2>
-        <div class="benefits-container">
-            <div class="benefit-card">
-                <h3>Save Development Time</h3>
-                <p>
-                    Reduce migration time by up to 80% compared to manual rewriting of automation workflows.
-                </p>
+        <div class="benefits">
+            <div class="benefit">
+                <div class="benefit-icon">⏱️</div>
+                <div class="benefit-content">
+                    <h3>Save Development Time</h3>
+                    <p>
+                        Reduce migration time by up to 80% compared to manual rewriting of automation workflows.
+                    </p>
+                </div>
+            </div>    
+            <div class="benefit">
+                <div class="benefit-icon">💰</div>
+                <div class="benefit-content">
+                    <h3>Reduce Licensing Costs</h3>
+                    <p>
+                        Eliminate expensive licenses by moving to open-source or more cost-effective alternatives.
+                    </p>
+                </div>
             </div>
-            <div class="benefit-card">
-                <h3>Enhanced Performance</h3>
-                <p>
-                    Enjoy up to 40% faster execution times with native code conversion.
-                </p>
+            <div class="benefit">
+                <div class="benefit-icon">🔍</div>
+                <div class="benefit-content">
+                    <h3>Maintain Logic Integrity</h3>
+                    <p>
+                        Our intelligent conversion preserves your business logic with 99% accuracy.
+                    </p>
+                </div>
             </div>
+            <div class="benefit">
+                <div class="benefit-icon">🚀</div>
+                <div class="benefit-content">
+                    <h3>Enhanced Performance</h3>
+                    <p>
+                        Enjoy up to 40% faster execution times with native code conversion.
+                    </p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🔄️</div>
+                <div class="benefit-content">
+                    <h3>Seamless Integration</h3>
+                    <p>
+                        Connect with modern DevOps pipelines and version control systems.
+                    </p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">📊</div>
+                <div class="benefit-content">
+                    <h3>Get data in csv format</h3>
+                    <p>
+                        Get your data in csv format for easy import into your favorite tools.
+                    </p>
+                </div>
+            </div>    
         </div>
     </div>
 </section>
 
 <style>
-    .benefits {
+    .benefits-section {
         padding: 5rem 0;
         background-color: var(--bg-white);
     }
 
     .container {
-        max-width: 1440px;
+        max-width: 1200px;
         margin: 0 auto;
         padding: 0 3rem;
     }
 
-    h2 {
+    .container h2 {
         font-size: 2.5rem;
         font-weight: 800;
         color: var(--text-dark);
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
         text-align: center;
     }
     
-    .benefits-container {
+    .benefits {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
     }
 
-    .benefit-card {
+    .benefit {
         display: flex;
         gap: 1rem;
-        align-items: center;
+        align-items: flex-start;
     }
-    
+
+    .benefit-icon {
+        width: 48px;
+        height: 48px;
+        background-color: rgba(16, 185, 129, 0.1);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary);
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .benefit-content h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.17em;
+        font-weight: 600;
+    }
+
+    .benefit-content p {
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        color: var(--text-dark);
+    }
+
 </style>
