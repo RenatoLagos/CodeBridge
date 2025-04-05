@@ -1,61 +1,53 @@
+---
+const BENEFITS = [
+    {
+        icon: "⏱️",
+        title: "Save Development Time",
+        description: "Reduce migration time by up to 80% compared to manual rewriting of automation workflows."
+        },
+    {
+        icon: "💰",
+        title: "Reduce Licensing Costs",
+        description: "Eliminate expensive licenses by moving to open-source or more cost-effective alternatives."
+    },
+    {
+        icon: "🔍",
+        title: "Maintain Logic Integrity",
+        description: "Our intelligent conversion preserves your business logic with 99% accuracy."
+    },
+    {
+        icon: "🚀",
+        title: "Enhanced Performance",
+        description: "Enjoy up to 40% faster execution times with native code conversion."
+    },
+    {
+        icon: "🔄️",
+        title: "Seamless Integration",
+        description: "Connect with modern DevOps pipelines and version control systems."
+    },
+    {
+        icon: "📊",
+        title: "Get data in csv format",
+        description: "Get your data in csv format for easy import into your favorite tools."
+    }
+] as const
+--- 
+
 <section id="benefits" class="benefits-section">
     <div class="container">
         <h2>Why Choose CodeBridge?</h2>
         <div class="benefits">
-            <div class="benefit">
-                <div class="benefit-icon">⏱️</div>
-                <div class="benefit-content">
-                    <h3>Save Development Time</h3>
-                    <p>
-                        Reduce migration time by up to 80% compared to manual rewriting of automation workflows.
-                    </p>
-                </div>
-            </div>    
-            <div class="benefit">
-                <div class="benefit-icon">💰</div>
-                <div class="benefit-content">
-                    <h3>Reduce Licensing Costs</h3>
-                    <p>
-                        Eliminate expensive licenses by moving to open-source or more cost-effective alternatives.
-                    </p>
-                </div>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">🔍</div>
-                <div class="benefit-content">
-                    <h3>Maintain Logic Integrity</h3>
-                    <p>
-                        Our intelligent conversion preserves your business logic with 99% accuracy.
-                    </p>
-                </div>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">🚀</div>
-                <div class="benefit-content">
-                    <h3>Enhanced Performance</h3>
-                    <p>
-                        Enjoy up to 40% faster execution times with native code conversion.
-                    </p>
-                </div>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">🔄️</div>
-                <div class="benefit-content">
-                    <h3>Seamless Integration</h3>
-                    <p>
-                        Connect with modern DevOps pipelines and version control systems.
-                    </p>
-                </div>
-            </div>
-            <div class="benefit">
-                <div class="benefit-icon">📊</div>
-                <div class="benefit-content">
-                    <h3>Get data in csv format</h3>
-                    <p>
-                        Get your data in csv format for easy import into your favorite tools.
-                    </p>
-                </div>
-            </div>    
+            {
+                BENEFITS.map(({icon, title, description}) => (
+                    <div class="benefit">
+                        <div class="benefit-icon">{icon}</div>
+                        <div class="benefit-content">
+                            <h3>{title}</h3>
+                            <p>{description}</p>
+                        </div>
+                    </div>
+                ))
+            }       
         </div>
     </div>
 </section>

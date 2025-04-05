@@ -1,33 +1,41 @@
+---
+const FEATURES = [
+    {
+        icon: "BP",
+        title: "Blue Prism to Power Automate",
+        description: "Convert Blue Prism automation to Microsoft Power Automate flows for seamless integration with your Microsoft ecosystem."
+    },
+    {
+        icon: "BP",
+        title: "Blue Prism to Python Code",
+        description: "Turn your Blue Prism automations into Python scripts with full functionality and improved performance."
+    },
+    {
+        icon: "UI",
+        title: "UiPath to Power Automate",
+        description: "Convert UiPath automations to Microsoft Power Automate flows for seamless integration with your Microsoft ecosystem."
+    },
+    {
+        icon: "UI",
+        title: "UiPath to Python Code",
+        description: "Turn your UiPath automations into Python scripts with full functionality and improved performance."
+    }
+] as const
+---
+
 <section id="features" class="features-section">
     <div class="conversion-paths">
-        <div class="conversion-card">
-            <div class="conversion-icon">BP</div>
-            <h3 class="conversion-title">Blue Prism to Power Automate</h3>
-            <p>
-                Convert Blue Prism automation to Microsoft Power Automate flows for seamless integration with your Microsoft ecosystem.
-            </p>
-        </div>
-        <div class="conversion-card">
-            <div class="conversion-icon">BP</div>
-            <h3 class="conversion-title">Blue Prism to Python Code</h3>
-            <p>
-                Turn your Blue Prism automations into Python scripts with full functionality and improved performance.
-            </p>
-        </div>
-        <div class="conversion-card">
-            <div class="conversion-icon">UI</div>
-            <h3 class="conversion-title">UiPath to Power Automate</h3>
-            <p>
-                Convert UiPath automations to Microsoft Power Automate flows for seamless integration with your Microsoft ecosystem.
-            </p>
-        </div>
-        <div class="conversion-card">
-            <div class="conversion-icon">UI</div>
-            <h3 class="conversion-title">UiPath to Python Code</h3>
-            <p>
-                Turn your UiPath automations into Python scripts with full functionality and improved performance.
-            </p>
-        </div>
+        {
+            FEATURES.map(({icon, title, description}) => (
+                <div class="conversion-card">
+                    <div class="conversion-icon">{icon}</div>
+                    <h3 class="conversion-title">{title}</h3>
+                    <p>
+                        {description}
+                    </p>
+                </div>
+            ))
+        }
     </div>
 </section>
 

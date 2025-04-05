@@ -5,7 +5,10 @@
             Join our exclusive waitlist to get early access to CodeBridge and transform your automation strategy.
         </p>
         <form>
-            
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Join Waitlist</button>
         </form>
     </div>
 </section>
@@ -15,5 +18,27 @@
         padding: 5rem 0;
         background-color: var(--primary-blue);
     }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        max-width:600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container h2 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--text-light);
+    }
+
+    .container p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        color: var(--text-light);
+    }
+    
 </style>
 
