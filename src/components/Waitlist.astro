@@ -4,12 +4,43 @@
         <p>
             Join our exclusive waitlist to get early access to CodeBridge and transform your automation strategy.
         </p>
-        <form>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="email" placeholder="Enter your email" />
-            <button type="submit">Join Waitlist</button>
-        </form>
+        <div class="waitlist-form">
+            <h3 class="form-title">Join the Waitlist</h3>
+            <form id="waitlist-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" id="first-name" class="form-input" />
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" id="last-name" class="form-input" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" />
+                </div>
+                <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" id="company" class="form-input" />
+                </div>
+                <div class="form-group">
+                    <label for="platform" class="form-label">Which platform are you currently using?</label>
+                    <select id="platform" class="form-select">
+                        <option disabled selected>Select an option</option>
+                        <option value="blue-prism">Blue Prism</option>
+                        <option value="uipath">UiPath</option>
+                        <option value="automation-anywhere">Automation Anywhere</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="form-button">Join Waitlist</button>
+                <div class="sucess-message" id="success-message">
+                    <p>Thank you for joining the waitlist! We'll be in touch soon with early access details.</p>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
 
@@ -39,6 +70,76 @@
         margin-bottom: 2rem;
         color: var(--text-light);
     }
+
+    .waitlist-form {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        background-color: var(--bg-white);
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        color: var(--text-dark);
+        text-align:center;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text-dark);
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--gray-light);
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+    }
+
+    .form-select {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--gray-light);
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    .form-button {
+        background-color: var(--primary-blue);
+        color: var(--text-light);
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+    
+    
+    
+    
     
 </style>
 
