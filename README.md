@@ -1,48 +1,27 @@
-# Astro Starter Kit: Basics
+# CodeBridge 🧩
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+**Transform Low-Code to Real Code**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+CodeBridge is a web platform that empowers teams to convert low-code automation solutions into fully-coded, flexible implementations using modern technologies like Python and Power Automate — all in just a few clicks.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Overview
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Many companies rely on low-code platforms like Blue Prism and UiPath to automate their operations. While powerful, these tools can become limiting when scalability, performance, or integration with modern stacks is required. CodeBridge solves this by transforming existing low-code workflows into readable, maintainable code.
 
-## 🚀 Project Structure
+## ✨ Key Features
 
-Inside of your Astro project, you'll see the following folders and files:
+- 🔁 **Blue Prism to Power Automate**  
+  Convert Blue Prism automation to Microsoft Power Automate flows for seamless integration with your Microsoft ecosystem.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- 🐍 **Blue Prism to Python Code**  
+  Turn your Blue Prism automations into Python scripts with full functionality and improved performance.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- 🔄 **UiPath to Power Automate**  
+  Convert UiPath automations to Microsoft Power Automate flows for seamless integration with your Microsoft tools.
 
-## 🧞 Commands
+- 🐍 **UiPath to Python Code**  
+  Turn your UiPath automations into Python scripts that are easier to scale and integrate.
 
-All commands are run from the root of the project, from a terminal:
+## 📸 Screenshot
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+> _Coming soon — add a screenshot or demo GIF here!_
