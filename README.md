@@ -24,4 +24,4 @@ Many companies rely on low-code platforms like Blue Prism and UiPath to automate
 
 ## 📸 Screenshot
 
-> _Coming soon — add a screenshot or demo GIF here!_
+> _Coming soon
